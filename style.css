@@ -1,22 +1,98 @@
-p{
-    color: red;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 30px;
-    font-weight: bold;
-    font-style: oblique;
-    text-align:justify;
-    text-decoration:double;
-    letter-spacing: 0.1cm;
-    text-transform: capitalize;
-    line-height:150%;
-h1{
-    text-align: center;
-    font-size:500%;
-    color: aqua;
-    font-weight: lighter;
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif; /* Fuente de letra para el cuerpo de la página */
+    margin: 0; /* Elimina los márgenes predeterminados del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+    background-color: #f4f4f4; /* Color de fondo gris claro */
+    color: #333; /* Color de texto gris oscuro */
+    line-height: 1.6; /* Espacio entre líneas de texto */
+    display: flex; /* Utiliza flexbox para centrar el contenido verticalmente */
+    flex-direction: column; /* Organiza los elementos en columna */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos el 100% de la altura de la pantalla */
 }
-span{
-    color: black;
-    text-decoration: underline;
 
+h1 {
+    font-size: 2.5em; /* Tamaño de la letra para el encabezado 1 */
+    text-align: center; /* Alinea el texto del encabezado al centro */
+    margin-top: 20px; /* Margen superior para el encabezado */
+    color: #007bff; /* Color azul para el encabezado */
 }
+
+h2 {
+    font-size: 2em; /* Tamaño de la letra para el encabezado 2 */
+    margin-top: 30px; /* Margen superior para el encabezado */
+    color: #343a40; /* Color gris oscuro para el encabezado */
+}
+
+h3 {
+    font-size: 1.5em; /* Tamaño de la letra para el encabezado 3 */
+    margin-top: 20px; /* Margen superior para el encabezado */
+    color: #555; /* Color gris para el encabezado */
+}
+
+p {
+    margin-bottom: 15px; /* Margen inferior para los párrafos */
+    text-align: justify; /* Justifica el texto de los párrafos */
+}
+
+ul {
+    list-style-type: disc; /* Estilo de viñeta para listas */
+    margin-left: 20px; /* Margen izquierdo para listas */
+}
+
+/* Estilos de secciones */
+section {
+    padding: 30px; /* Relleno interno para las secciones */
+    margin: 20px; /* Margen externo para las secciones */
+    background-color: #fff; /* Color de fondo blanco para las secciones */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease; /* Transición suave para la propiedad transform */
+}
+
+section:hover {
+    transform: translateY(-5px); /* Eleva la sección ligeramente al pasar el cursor por encima */
+}
+
+#introduccion {
+    text-align: justify; /* Justifica el texto de la introducción */
+}
+
+#variables {
+    display: flex; /* Utiliza flexbox para organizar las secciones de variables */
+    flex-wrap: wrap; /* Permite que las secciones de variables se ajusten a la pantalla */
+    justify-content: center; /* Centra las secciones de variables horizontalmente */
+}
+
+#variables section {
+    width: 45%; /* Ancho de cada sección de variable */
+    margin: 10px; /* Margen para las secciones de variables */
+    border: 1px solid #ddd; /* Borde para las secciones de variables */
+    padding: 20px; /* Relleno interno para las secciones de variables */
+    border-radius: 5px; /* Bordes redondeados para las secciones de variables */
+    transition: transform 0.3s ease; /* Transición suave para la propiedad transform */
+}
+
+#variables section:hover {
+    transform: scale(1.05); /* Escala la sección ligeramente al pasar el cursor por encima */
+}
+
+/* Estilos de imágenes */
+img {
+    max-width: 100%; /* Ajusta el ancho de la imagen al contenedor */
+    height: auto; /* Ajusta la altura de la imagen proporcionalmente */
+    display: block; /* Evita espacios en blanco debajo de la imagen */
+    margin: 10px auto; /* Centra la imagen horizontalmente */
+    border-radius: 5px; /* Bordes redondeados para las imágenes */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera para las imágenes */
+    transition: transform 0.3s ease; /* Transición suave para la propiedad transform */
+}
+
+img:hover {
+    transform: rotate(5deg); /* Rota la imagen ligeramente al pasar el cursor por encima */
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    #variables section {
+        width: 90%; /*

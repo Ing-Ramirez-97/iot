@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto IoT - Comunicación HMI y Nube</title>
@@ -10,8 +11,43 @@
 
     <section id="introduccion">
         <h2>Introducción</h2>
-        <p>Este proyecto tiene como objetivo principal desarrollar un sistema de comunicación robusto entre una pantalla HMI y la nube, utilizando el protocolo MQTT. Este sistema permitirá la monitorización y control de variables críticas en entornos industriales, como peso, presión, temperatura y horas, para su posterior análisis y visualización en la nube.</p>
-        <p>Este proyecto se enmarca en el curso de IoT y está dirigido a [mencionar el público objetivo]. Los objetivos específicos de este proyecto son [enumerar los objetivos específicos]. Se espera que este proyecto genere beneficios como [mencionar los beneficios esperados].</p>
+        <p>Este proyecto tiene como objetivo principal desarrollar un sistema de comunicación robusto entre una pantalla HMI y la nube, utilizando el protocolo MQTT. Este sistema permitirá la monitorización y control de variables críticas en entornos industriales tales como el peso, la presión, la temperatura y las horas de funcionamiento (horómetros), para su posterior análisis y visualización en la nube.</p>
+        <img src="pantalla-kinco.png" alt="Pantalla Kinco">
+        <p>Este proyecto se enmarca en el curso de IoT como Lectiva II, perteneciente al 9no semestre del pregrado de Ingeniería Electrónica, en la Institución Universitaria Antonio José Camacho.
+            Los objetivos específicos de este proyecto son:
+            <ul>
+    <li>
+        Diseñar programación en lenguaje ladder en el PLC a usar para dicho proyecto.
+        <li>
+            Diseñar la interfaz en la HMI para el control de la máquina a intervenir.
+            <li>
+                Desarrollar un sistema de comunicación robusto entre la pantalla HMI y la nube.
+                <li>
+                    Implementar un sistema de monitorización y control de variables críticas en entornos industriales.
+                    <li>
+                        Analizar y visualizar los datos recolectados en la nube.
+                    </li>
+                </li>
+            </li>
+        </li>
+    </li>
+        </ul>. 
+Se espera que este proyecto genere beneficios como:
+<ul>
+        <li>Facilitar el controlo de los mantenimientos.
+            <li>Mejorar la eficiencia de la producción.
+                <li>Reducir los costos de mantenimiento y producción.
+                    <li>Evitar pérdida de material por situaciones adversas a la operación.
+                        <li>
+                            Controlar la eficiencia y producción del operario y/o la maquinaria.
+                        </li>
+                    </li>
+                </li>
+            </li>
+        </li> 
+    </ul>
+</ul>
+</p>
     </section>
 
     <section id="metodologia">
@@ -24,40 +60,49 @@
 
         <section id="peso">
             <h3>Peso</h3>
-            <img src="materiales-carto-contenido.png" alt="Imagen de peso">
+            <img src="materiales-carton-contenido.png" alt="Imagen de peso">
             <p>El peso de las pacas en el proceso de la industria de residuos aprovechables, es un factor ideal ya que le permite al usuario conocer el material producido o compactado, recibido o despachado.</p>
+            <p>Imágen extraída de: https://mireciclados.com/wp-content/uploads/2016/02/materiales-carton-contenido.png </p>
         </section>
 
         <section id="presion">
             <h3>Presión</h3>
             <img src="pressure-gauge-application.jpg" alt="Imagen de presión">
             <p>La presión de trabajo es un factor importante a la hora de determinar una falla. Cuando en un sistema hidráulico se detecta que no se está suministrando la suficiente presión hidráulica, es un indicio para comenzar a hallar de donde proviene dicha caída de presión y se comienzan a identificar fugas en los componentes, desgaste en la bomba y otros puntos por los cuales se pueda estar cayendo la presión.</p>
+            <p>Imágen extraída de :https://tameson.es/pages/manometro-hidraulico</p>
         </section>
 
         <section id="temperatura">
             <h3>Temperatura</h3>
-            <img src="temperatura.aceite.png" alt="Imagen de temperatura">
+            <img src="temperatura aceite.png" alt="Imagen de temperatura">
             <p>La temperatura de trabajo del aceite hidráulico es vital para prolongar la vida útil del sistema, permitir el flujo eficaz del fluido, y demás variables que intervienen con esta factor. La temperatura de trabajo del aceite hidráulico puede variar dependiendo de su normativa, es decir que la temperatura ambiente a la que trabajará el sistema, define el tipo de aceite que se debe seleccionar. La temperatura ideal de trabajo del aceite hidráulico, oscila entre los 45 y 55 grados centígrados.</p>
+            <p> Imágen extraída de: https://www.widman.biz/images_boletin/109_graph1_aceites_hidraulicos.png</p>
         </section>
 
         <section id="horas">
             <h3>Horas</h3>
             <img src="horómetro.jpg" alt="Imagen de horas">
             <p>Cuando determinamos la cantidad de accionamientos, o las horas de trabajo de algún componente dentro de cualquier sistema, podemos facilitar la planeación del mantenimiento o la predicción de fallas en el mismo.</p>
+            <p>Imágen extraída de: https://es.wikipedia.org/wiki/Hor%C3%B3metro</p>
         </section>
     </section>
 
     <section id="resultados">
         <h2>Resultados esperados</h2>
         <ul>
-            <li>[Mencionar los resultados específicos esperados]</li>
+            <li>Automatizar procesos actualmente inexistentes dentro de este sector del mercado</li>
         </ul>
     </section>
 
     <section id="tecnologias">
         <h2>Tecnologías utilizadas</h2>
         <ul>
-            <li>[Enumerar las tecnologías específicas utilizadas]</li>
+            <li>Internet de las cosas (IoT)
+                <li>MQTT
+                    <li>Python
+                        </li>
+                </li>
+            </li>
         </ul>
     </section>
 
